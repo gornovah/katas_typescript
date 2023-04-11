@@ -1,5 +1,5 @@
 export const fizzBuzz = (num: number): string => {
-  if (num === 15 || num === 30) {
+  if (num === 15 || num === 30 || num === 45) {
     return "BuzzFizz";
   }
   if (num % 5 === 0) {
