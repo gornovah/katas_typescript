@@ -13,6 +13,7 @@ describe("fizzBuzz", () => {
     ${10} | ${"Buzz"}
     ${12} | ${"Fizz"}
     ${15} | ${"BuzzFizz"}
+    ${30} | ${"BuzzFizz"}
   `(
     "converts a number $input to be the string $output",
     ({ input, output }) => {
