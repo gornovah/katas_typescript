@@ -15,11 +15,19 @@ describe("fizzBuzz", () => {
   );
   it.each`
     input | output
+    ${5}  | ${"Buzz"}
+    ${10} | ${"Buzz"}
+  `(
+    "return the multiple of 5-> $input to be the string $output",
+    ({ input, output }) => {
+      expect(fizzBuzz(input)).toEqual(output);
+    }
+  );
+  it.each`
+    input | output
     ${1}  | ${"1"}
     ${2}  | ${"2"}
     ${4}  | ${"4"}
-    ${5}  | ${"Buzz"}
-    ${10} | ${"Buzz"}
     ${15} | ${"BuzzFizz"}
     ${30} | ${"BuzzFizz"}
   `(
